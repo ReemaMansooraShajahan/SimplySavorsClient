@@ -1,0 +1,78 @@
+.recipe-container{
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fill , minmax(220px,1fr));
+    grid-gap:1.5em;
+    
+    }
+    .recipe-card{
+    
+        
+        border: 3px solid var(--background-color);
+        overflow: hidden;
+        box-shadow: 0 5px 15px var(--shadow-color);
+       .custom-image{
+        z-index: 1;
+       }
+        .recipe-card-info{
+         
+            padding: 15px;
+        }
+            .recipe-title{
+              font-size: 1.25em;
+              font-weight: bolt;
+              margin-bottom: .5em;
+              color: var(--text-color);
+              margin-top: .25em;
+            }
+            .recipe-desc{
+                columns: var(--text-light);
+                font-size: .9em;
+                letter-spacing: 1px;
+            }
+         .view-btn{
+            font-size: 1em;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: .75em;
+            display: inline-block;
+         }
+    }
+    .r-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(220px,1fr));
+        grid-gap:1.5em;
+         z-index: 1;
+        }
+        .r-card{
+        
+            
+            border: 3px solid var(--background-color);
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            
+            .r-card-info{
+             
+                padding: 15px;
+            }
+                .r-title{
+                  font-size: 1.25em;
+                  font-weight: bolt;
+                  margin-bottom: .5em;
+                  color: var(--text-color);
+                  margin-top: .25em;
+                }
+                .r-desc{
+                    columns: var(--text-light);
+                    font-size: .9em;
+                    letter-spacing: 1px;
+                }
+             .view-btn{
+                font-size: 1em;
+                font-weight: bold;
+                color: var(--primary-color);
+                margin-top: .75em;
+                display: inline-block;
+             }
+        }
+      

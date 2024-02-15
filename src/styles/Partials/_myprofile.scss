@@ -1,0 +1,43 @@
+
+    
+.my-profile-dropdown {
+    position: relative;
+    display: inline-block;
+  
+    &.active .dropdown-content{
+        
+        display: flex; // Change from 'block' to 'flex'
+        flex-direction: column;
+        
+      }
+ 
+
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        padding: 1em;
+        border-radius: 0 0 10px 10px;
+        box-sizing: border-box;
+      /* Add animation properties */
+      animation: getAnimationDuration(0.3s) fadeInVertical;
+    }
+  
+  
+      /* Define the animation for the dropdown items */
+      @keyframes fadeInVertical {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      a{
+        display: block;
+      }
+    }
